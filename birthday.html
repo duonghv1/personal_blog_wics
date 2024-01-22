@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda's Blog</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="tm-page-wrap mx-auto">
+		<div class="position-relative">
+			<div class="potition-absolute tm-site-header">
+				<div class="container-fluid position-relative">
+					<div class="row">						
+                        <div class="col-5 col-md-8 ml-auto mr-0">
+                            <div class="tm-site-nav">
+                                <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
+                                    <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
+                                        data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span>
+                                            <i class="fas fa-bars tm-menu-closed-icon"></i>
+                                            <i class="fas fa-times tm-menu-opened-icon"></i>
+                                        </span>
+                                    </button>
+                                    <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                                        <ul class="navbar-nav text-uppercase">
+                                            <li class="nav-item active">
+                                                <a class="nav-link tm-nav-link" href="index.html">Blogs</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-welcome-container tm-fixed-header">
+				<div class="text-center">
+					<p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 text-white mx-auto">Surprise birthday at school</p>                	
+				</div>                
+            </div>
+
+			<!-- Header image -->
+            <div id="tm-fixed-header-bg" ></div> 
+		</div>
+
+		<!-- Page content -->
+		<div class="container-fluid">
+			<div class="mx-auto tm-content-container">
+				<main>
+					<div class="row mb-5 pb-4">
+						<div class="col-12">
+							<!-- Video/image  1422x800 -->
+							<img width="1422" height="800" src="img/birthdaycake.jpg">
+						</div>
+					</div>
+					<div class="row mb-5 pb-5">
+						<div class="col-xl-8 col-lg-7">
+							<!-- Video description -->
+							<div class="tm-video-description-box">
+								<h2 class="mb-5 tm-video-title">I was not expecting it at all...</h2>
+								<p class="mb-4">The best thing is probably the fact that my friend bought me a cake from Portos! It truly made my day when my friend surprised me with a cake from Porto's. The moment I saw that iconic Porto's box, I couldn't help but feel a rush of excitement and gratitude. The memories of savoring that Porto's cake will stay with me, reminding me of the sweetness that true friendships bring. Grateful for the cake, grateful for the friend, and grateful for the moments that make life a little more delicious.
+								</p>
+							</div>							
+						</div>
+						<div class="col-xl-4 col-lg-5">
+							<!-- Share box -->
+							<div class="tm-bg-gray tm-share-box">
+								<h6 class="tm-share-box-title mb-4">Share this blog</h6>
+								<div class="mb-5 d-flex">
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-facebook"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-twitter"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-pinterest"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="far fa-envelope"></i></a>
+								</div>
+								<p class="mb-4">Author: <a href="about.html" class="tm-text-link">Linda</a></p>
+								<a href="#" class="tm-bg-white px-5 mb-4 d-inline-block tm-text-primary tm-likes-box tm-liked">
+									<i class="fas fa-heart mr-3 tm-liked-icon"></i>
+									<i class="far fa-heart mr-3 tm-not-liked-icon"></i>
+									<span id="tm-likes-count">10 likes</span>
+								</a>
+							<K/div>
+						</div>
+					</div>
+				</main>
+
+			</div> <!-- .tm-content-container -->
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$('.tm-likes-box').click(function(e) {
+    			e.preventDefault();
+    			$(this).toggleClass('tm-liked');
+
+    			if($(this).hasClass('tm-liked')) {
+    				$('#tm-likes-count').html('11 likes');
+    			} else {
+    				$('#tm-likes-count').html('10 likes');
+    			}
+    		});
+    	});
+    </script>
+</body>
+</html>
