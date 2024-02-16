@@ -311,20 +311,6 @@ h2, p { color: #666666; }
     color: #666666;
 }
 
-.tm-subscribe-form { 
-    display: flex; 
-    align-items: center;
-}
-
-.tm-subscribe-form > input {
-    padding: 5px 15px;
-    margin-right: 20px;
-    flex: 1;
-    max-width: 382px;
-}
-
-.tm-footer-links > li { margin-bottom: 10px; }
-
 /*Video detail page*/
 
 .tm-video-title { font-size: 2.5rem; }
