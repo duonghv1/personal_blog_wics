@@ -18,6 +18,7 @@
 					<div class="row">						
                         <div class="col-5 col-md-8 ml-auto mr-0">
                             <div class="tm-site-nav">
+								<!-- INFO: THIS IS THE NAVIGATION BAR  -->
                                 <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
                                     <button class="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed" type="button"
                                         data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav"
@@ -48,36 +49,46 @@
 			</div>
 			<div class="tm-welcome-container tm-fixed-header">
 				<div class="text-center">
-					<p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 text-white mx-auto">Surprise birthday at school</p>                	
+					<!-- CHALLENGE 1: ADD A HEADER FOR YOUR BLOG AND CUSTOMIZE IT 
+					HINT: which tag will help you add text? -->
+					              	
 				</div>                
             </div>
 
-			<!-- Header image -->
+			<!-- CHALLENGE 2: Add an image behind the Header by modifying the the css class "tm-fixed-header-bg"  -->
             <div id="tm-fixed-header-bg" ></div> 
 		</div>
 
-		<!-- Page content -->
+		<!-- INFO: This is the Blog content -->
 		<div class="container-fluid">
 			<div class="mx-auto tm-content-container">
 				<main>
 					<div class="row mb-5 pb-4">
 						<div class="col-12">
-							<!-- Video/image  1422x800 -->
-							<img width="1422" height="800" src="img/birthdaycake.jpg">
+							<!-- OPTINONAL: Add an image/ video in front of your blog to make it more visually appealing! -->
+							<!-- <img width="1422" height="800" src="img/birthdaycake.jpg"> -->
 						</div>
 					</div>
 					<div class="row mb-5 pb-5">
 						<div class="col-xl-8 col-lg-7">
-							<!-- Video description -->
 							<div class="tm-video-description-box">
-								<h2 class="mb-5 tm-video-title">I was not expecting it at all...</h2>
-								<p class="mb-4">The best thing is probably the fact that my friend bought me a cake from Portos! It truly made my day when my friend surprised me with a cake from Porto's. The moment I saw that iconic Porto's box, I couldn't help but feel a rush of excitement and gratitude. The memories of savoring that Porto's cake will stay with me, reminding me of the sweetness that true friendships bring. Grateful for the cake, grateful for the friend, and grateful for the moments that make life a little more delicious.
-								</p>
+								<!-- CHALLENGE 2: ADD A CATCHLINE FOR YOUR BLOG. 
+								HINT: IF you want to make it stand out from the rest of the text, what tag should you use? -->
+								<!-- CHALLENGE 3: ADD SOME RANDOM TEXT FOR YOUR BLOG HERE
+								HINT: What tag would you use for normal text in the website? 
+							
+								ADD ON CHALLENGE: 	
+									- Feel free to customize the font/styling of the content as you like. 
+								-->
 							</div>							
 						</div>
 						<div class="col-xl-4 col-lg-5">
-							<!-- Share box -->
-							<div class="tm-bg-gray tm-share-box">
+							<!-- OPTIONAL: Share box 
+							A lot of blog post would have a share box where you can keep track of number of likes or
+							share the page with your friend. This div here is only the look of it but the content does
+							not work. 
+							-->
+							<!-- <div class="tm-bg-gray tm-share-box">
 								<h6 class="tm-share-box-title mb-4">Share this blog</h6>
 								<div class="mb-5 d-flex">
 									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-facebook"></i></a>
@@ -91,18 +102,22 @@
 									<i class="far fa-heart mr-3 tm-not-liked-icon"></i>
 									<span id="tm-likes-count">10 likes</span>
 								</a>
-							<K/div>
+							</div> -->
 						</div>
 					</div>
 				</main>
 
-			</div> <!-- .tm-content-container -->
+			</div> 
 		</div>
 	</div>
 
 	<script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+		// INFO: JS Code to show you how to change the likes count as user clicks on the like button. 
+		// ADD ON CHALLENGE: If you want to research on your own time, you can think about how to store this
+		// info forever so that whenever user goes on the page, they will see the total likes amount 
+		// Hint: You can use a database called Firebase for this!
     	$(document).ready(function() {
     		$('.tm-likes-box').click(function(e) {
     			e.preventDefault();

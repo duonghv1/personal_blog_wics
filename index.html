@@ -4,31 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CHALLENGE 0: CHANGE THIS TO THE NAME OF YOUR WEBSITE -->
     <title>Linda's Blog</title>
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-<!--
 
-TemplateMo 552 Video Catalog
-https://templatemo.com/tm-552-video-catalog
-
--->
 </head>
 
 <body>
     <div class="tm-page-wrap mx-auto">
         <div class="position-relative">
-            <!-- Site Header -->
+            <!-- INFO: This is a Site Header -->
             <div class="position-absolute tm-site-header">
                 <div class="container-fluid position-relative">
                     <div class="row">
 
-                        <!-- ADD ON: Logo -->
-                        <!-- ADD ON: Favicon -->
+                        <!-- ADD ON Challenge: Find out how to add a Favicon for your website 
+                        Hint: you can use https://www.favicon.cc/ to make your own custom favicon 
+                        -->
 
-                        <!-- Item: Navigation Bar -->
+                        <!-- INFO: This is a Navigation Bar -->
                         <div class="col-5 col-md-8 ml-auto mr-0">
                             <div class="tm-site-nav">
                                 <nav class="navbar navbar-expand-lg mr-0 ml-auto" id="tm-main-nav">
@@ -42,14 +39,20 @@ https://templatemo.com/tm-552-video-catalog
                                     </button>
                                     <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                                         <ul class="navbar-nav text-uppercase">
+                                            <!-- Challenge 1: I want to create 3 hyper links in my nav bar, each called:
+                                                "Blogs" and "About Me"
+                                                (1) When user clicks on the "Blogs" link, they should stay on this same page (index.html). 
+                                                (2) When user clicks on the "About Me" link, it should send them to the "About Me" page (about.html).
+                                                
+                                                ADD ON CHALLENGE:
+                                                   - Customizable the effect when user clicks on the link: try deleting the class from each <a> tag and see what happen to each link. You can feel free to customize and change up the color/ effects when user hover over each link.
+                                                    - Create another list item, for a third link called "Contact", which should point to contact.html
+                                            -->
                                             <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="#">Blogs</a>
+                                                <a class="nav-link tm-nav-link" href=""></a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="about.html">About</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                                                <a class="nav-link tm-nav-link" href=""></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -60,30 +63,44 @@ https://templatemo.com/tm-552-video-catalog
                 </div>
             </div>
 
-            <!-- Item: Welcome Container -->
+            <!-- INFO: This is a Welcome Container -->
             <div class="tm-welcome-container text-center text-white">
                 <div class="tm-welcome-container-inner">
+                    <!-- Challenge 2: Customize the text when user first clicks in and see the page. 
+                        ADD ON CHALLENGE:
+                            - Customizable the  size/ color/ font style of the text
+                    -->
                     <p class="tm-welcome-text mb-1 text-black">Hi, this is Linda!</p>
                     <p class="tm-welcome-text mb-5 text-black">Thank you for stopping by my blog, hope you enjoy ~</p>
+
+                    <!-- CUSTOMIZABLE: This is an Animated Button that have an animation when user clicks on it. 
+                    Feel free to try explore different things you want to do with the effects of this button. 
+                    -->
                     <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
                         <span>Discover</span>
                     </a>
                 </div>
             </div>
 
+            <!-- CUSTOMIZABLE: This is an animated background that goes on as a loop in the welcome container. 
+            Feel free to choose another gif/ video to put on loop or change the speed of the video. 
+            You can also change it to an image instead of a video.
+            -->
             <div id="tm-video-container">
                 <video autoplay muted loop id="tm-video">
                     <source src="video/badminton.mp4" type="video/mp4">
                 </video>    
             </div>
-            
             <i id="tm-video-control-button" class="fas fa-pause"></i>
         </div>
 
+        
         <div class="container-fluid">
             <div id="content" class="mx-auto tm-content-container">
                 <main>
-                    <div class="row">
+                    <!-- OPTIONAL: A catalog for your blog.
+                    Feel free to uncomment to see what it does!!! -->
+                    <!-- <div class="row">
                         <div class="col-12">
                             <h2 class="tm-page-title mb-4">My Blog Catalog</h2>
                             <div class="tm-categories-container mb-5">
@@ -97,79 +114,48 @@ https://templatemo.com/tm-552-video-catalog
                                 </ul>
                             </div>        
                         </div>
-                    </div>
+                    </div> -->
+
+                    <!-- CHALLENGE 3: CUSTOMIZE YOUR OWN BLOG THUMBNAILS  -->
                     
                     <div class="row tm-catalog-item-list">
+                        <!-- INFO: This is a blog thumbnail.
+                            It contains an animated, hyperlink image and some little text description of what the blog post will be about. 
+                            -->
+                            <!-- CHALLENGE 3.1: Customize the content, image, and link of this blog. The link in <a> tag should be pointing
+                                to an actual blog page. For example, since my blog thumbnail is about my birthday, I have the actual blog post 
+                                written in birthday.html and link it here so once user clicks on the thumbnail they will be directed to the right page. 
+                                
+                                Hint: make a copy of birthday.html page and customize it to be about your story. Follow the direction in that template to see what you can change over there. Then link your new page under this thumbnail.
+                            -->
                         <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
+                            <div class="position-relative tm-thumbnail-container">   <!-- this part is the thumbnail -->
                                 <img src="img/birthdaycake.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
                                 <a href="birthday.html" class="position-absolute tm-img-overlay">
                                 </a>
                             </div>    
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
+                            <div class="p-4 tm-bg-gray tm-catalog-item-description"> <!-- this part is the description -->
                                 <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Surprise birthday at school</h3>
                                 <p class="tm-catalog-item-text">I have the most fun day at school ever! My friends hosted a surprise birthday party for me.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/badminton.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="birthday.html" class="position-absolute tm-img-overlay">
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">First badminton tournament ever</h3>
-                                <p class="tm-catalog-item-text">It was so scary at first ...
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/baking.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="birthday.html" class="position-absolute tm-img-overlay">
-                                </a>
-                            </div>                            
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Baking session with my friends</h3>
-                                <p class="tm-catalog-item-text">I went over my friends house after finals. We finally made strawberry shortcake!</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/oldfriend.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="birthday.html" class="position-absolute tm-img-overlay">
-                                </a>
-                            </div>    
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Met an old friend from high school</h3>
-                                <p class="tm-catalog-item-text">I ran into an old friend from high school and learned that ...</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/gaming.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="birthday.html" class="position-absolute tm-img-overlay">
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Gaming night with my siblings</h3>
-                                <p class="tm-catalog-item-text">We play a mobile version of League of Legends. My brother kept complaining >:((</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/japan.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="birthday.html" class="position-absolute tm-img-overlay">
-                                </a>
-                            </div>                            
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Planning trip to Japan</h3>
-                                <p class="tm-catalog-item-text">One of my bucket list item is to visit Japan once I graduate!</p>
-                            </div>
-                        </div>
-                    </div>
+                        <!-- CHALLENGE 4: ADD 1+ MORE BLOG THUMBNAIL
+                        You don't need to actually link these thumbnails with a page, but we want you to practice getting used to extending 
+                        our template. 
+                        Hint: Copy the above thumbnail and modify it as you like. -->
+                        
+                        
+                        
+                        
+                    <!-- OPTIONAL: Blog Paging Buttons. 
+                    When the number of blogs get too big, it is generally a good idea to seperate it by pages so viewers dont get overload
+                    with content. 
+                    We have provided you a template of the blog paging button down here, but it is up to you to explore and figure out 
+                    how to make certain thumbnails show up on each page. 
+                     -->
 
-                    <!-- Blog Paging Buttons -->
+                    <!-- Blog Paging Buttons
                     <div>
                         <ul class="nav tm-paging-links">
                             <li class="nav-item active"><a href="#" class="nav-link tm-paging-link">1</a></li>
@@ -178,16 +164,18 @@ https://templatemo.com/tm-552-video-catalog
                             <li class="nav-item"><a href="#" class="nav-link tm-paging-link">4</a></li>
                             <li class="nav-item"><a href="#" class="nav-link tm-paging-link">></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </main>
-            </div> <!-- tm-content-container -->
+            </div> 
         </div>
 
-    </div> <!-- .tm-page-wrap -->
+    </div> 
+
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+        // INFO: JS Code to adjust the size of the background vidoe dynamically if user resizes the page. 
         function setVideoSize() {
             const vidWidth = 1920;
             const vidHeight = 1080;
@@ -219,6 +207,8 @@ https://templatemo.com/tm-552-video-catalog
             tmVideo.css('margin-top', marginTop);
         }
 
+        // INFO: JS code for adjusting the playback speed of the video in the background and the functionality of 
+        // the play/pause button
         $(document).ready(function () {
             /************** Video background *********/
             var video = $('#tm-video');
